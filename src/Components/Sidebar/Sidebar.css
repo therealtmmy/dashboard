@@ -1,0 +1,29 @@
+.Sidebar {
+    background: #152259;
+    width: 17em;
+    height: 100vh;
+    color: white;
+}
+
+.Side1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2em;
+    line-height: 3em;
+}
+
+.Side1 > img {
+    width: 5em;
+    height: 5em;
+    object-fit: contain;
+    border-radius: 100%;
+}
+
+.line {
+    width: 17em;
+    height: 1px;
+    background: #BDBDBD;
+    margin-top: 2em;
+}
