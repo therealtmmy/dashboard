@@ -1,4 +1,5 @@
 import React from "react";
+import Dashboard from "../Dashboard/Dashboard";
 import "./Sidebar.css";
 import {
   FaHome,
@@ -9,37 +10,44 @@ import {
   FaChartBar,
   FaExternalLinkAlt,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const iconData = [
     {
       icon: FaHome,
+      link: "dashboard",
       name: "Dashboard",
     },
     {
       icon: FaChalkboardTeacher,
+      link: "teachers",
       name: "Teachers",
     },
     {
       icon: FaUser,
+      link: "students",
       name: "Students/classes",
     },
     {
       icon: FaCreditCard,
+      link: "billing",
       name: "Billing",
     },
     {
       icon: FaCog,
+      link: "settings",
       name: "Settings and Profile",
     },
     {
       icon: FaChartBar,
+      link: "exams",
       name: "Exams",
     },
   ];
 
   return (
-    <>
+    <div className="Side">
       <div className="Sidebar">
         <div className="Side1">
           <img
@@ -53,18 +61,19 @@ const Sidebar = () => {
 
         <div className="Side2">
           {iconData.map((value, index) => (
-            <button key={index}>
+            <Link className="button" to={value.link} key={index}>
               {React.createElement(value.icon, { style: { fontSize: "19px" } })}{" "}
               {value.name}
-            </button>
+            </Link>
           ))}
 
-          <button className="Feature">
+          <Link to="feature" id="Feature" className="button">
             <FaExternalLinkAlt style={{ fontSize: "19px" }} /> Feature
-          </button>
+          </Link>
         </div>
       </div>
-    </>
+      <Dashboard />
+    </div>
   );
 };
 

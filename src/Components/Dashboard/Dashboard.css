@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+.Dashboard {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 7%;
+    left: 30%;
+}
+
+.Header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 5em;
+    margin-top: 0em;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: rgb(47, 46, 45);
+}
+
+.Notification {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.Bell {
+    font-size: 1.5em;
+}
+
+button {
+    background: #509CDB;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 8em;
+    height: 2.5em;
+    color: white;
+}

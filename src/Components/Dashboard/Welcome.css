@@ -1,0 +1,37 @@
+.Welcome {
+    margin-top: 5em;
+    color: rgb(47, 46, 45);
+}
+
+.mail {
+    margin-left: 4em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: rgb(64, 62, 62);
+}
+
+
+.AdminBoard {
+    display: flex;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.Icon {
+    background: rgba(214, 216, 222, 0.4);
+    width: 25px;
+    height: 15px;
+    padding: 5px;
+    color: rgba(19, 41, 108, 0.6);
+    border-radius: 5px;
+}
+
+.AdminText {
+    width: 33em;
+}

@@ -1,3 +1,7 @@
+.Side {
+    display: flex;
+}
+
 .Sidebar {
     background: #152259;
     width: 17em;
@@ -38,12 +42,12 @@
     margin-bottom: 2em;
 }
 
-button {
+.button {
     display: flex;
     align-items: center;
     justify-content: start;
-    gap: 1.4em;
-    width: 16em;
+    gap: 1.6em;
+    width: 19em;
     border-radius: 5px;
     border: none;
     height: 4em;
@@ -51,10 +55,12 @@ button {
     color: rgb(255, 255, 255);
     padding-left: 20px;
     background: none;
+    font-size: 12px;
+    text-decoration: none;
 }
 
-.Feature {
-    width: 16em;
+#Feature {
+    width: 19em;
     border-radius: 5px;
     border: none;
     height: 4em;
@@ -63,6 +69,6 @@ button {
     margin-top: 5em;
 }
 
-button:hover {
+.button:hover {
     background: #509CDB;
 }
