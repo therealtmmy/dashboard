@@ -6,17 +6,17 @@ const data = [
   {
     icon: FaUser,
     heading: "Add other admins",
-    text: "Create rich course content and coaching products for your students. Wehn you give them a pricing plan, they'll appear on your site!",
+    text: "Create rich course content and coaching products for your students. When you give them a pricing plan, they'll appear on your site!",
   },
   {
     icon: FaAddressCard,
     heading: "Add classes",
-    text: "Create rich course content and coaching products for your students. Wehn you give them a pricing plan, they'll appear on your site!",
+    text: "Create rich course content and coaching products for your students. When you give them a pricing plan, they'll appear on your site!",
   },
   {
     icon: FaGraduationCap,
     heading: "Add students",
-    text: "Create rich course content and coaching products for your students. Wehn you give them a pricing plan, they'll appear on your site!",
+    text: "Create rich course content and coaching products for your students. When you give them a pricing plan, they'll appear on your site!",
   },
 ];
 
