@@ -1,7 +1,3 @@
-.Side {
-    display: flex;
-}
-
 .Sidebar {
     background: #152259;
     width: 17em;
@@ -67,8 +63,4 @@
     cursor: pointer;
     color: white;
     margin-top: 5em;
-}
-
-.button:hover {
-    background: #509CDB;
 }

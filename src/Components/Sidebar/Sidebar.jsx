@@ -1,5 +1,4 @@
 import React from "react";
-import Dashboard from "../Dashboard/Dashboard";
 import "./Sidebar.css";
 import {
   FaHome,
@@ -10,7 +9,7 @@ import {
   FaChartBar,
   FaExternalLinkAlt,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   const iconData = [
@@ -61,18 +60,31 @@ const Sidebar = () => {
 
         <div className="Side2">
           {iconData.map((value, index) => (
-            <Link className="button" to={value.link} key={index}>
+            <NavLink
+              className="button"
+              to={value.link}
+              style={({ isActive }) => {
+                return { backgroundColor: isActive ? "#509CDB" : "#152259" };
+              }}
+              key={index}
+            >
               {React.createElement(value.icon, { style: { fontSize: "19px" } })}{" "}
               {value.name}
-            </Link>
+            </NavLink>
           ))}
 
-          <Link to="feature" id="Feature" className="button">
+          <NavLink
+            to="feature"
+            id="Feature"
+            className="button"
+            style={({ isActive }) => {
+              return { backgroundColor: isActive ? "#509CDB" : "#152259" };
+            }}
+          >
             <FaExternalLinkAlt style={{ fontSize: "19px" }} /> Feature
-          </Link>
+          </NavLink>
         </div>
       </div>
-      <Dashboard />
     </div>
   );
 };
