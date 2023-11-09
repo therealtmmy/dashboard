@@ -64,3 +64,16 @@
     color: white;
     margin-top: 5em;
 }
+
+.New {
+    width: 3.5em;
+    height: 0.6em;
+    border-radius: 30px;
+    background-color: #509CDB;
+    padding: 5px;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

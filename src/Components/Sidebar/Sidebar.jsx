@@ -81,7 +81,10 @@ const Sidebar = () => {
               return { backgroundColor: isActive ? "#509CDB" : "#152259" };
             }}
           >
-            <FaExternalLinkAlt style={{ fontSize: "19px" }} /> Feature
+            <FaExternalLinkAlt style={{ fontSize: "19px" }} /> Features
+            <span className="New">
+              <h5>NEW</h5>
+            </span>
           </NavLink>
         </div>
       </div>
