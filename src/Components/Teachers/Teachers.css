@@ -1,0 +1,76 @@
+.Teacher {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5%;
+    left: 27%;
+}
+
+.TeacherHeader {
+    display: flex;
+    align-content: end;
+    justify-content: end;
+    gap: 5em;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: rgb(47, 46, 45);
+    margin-left: 50em;
+}
+
+.TeacherNotification {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+
+.TeacherButton {
+    background: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 8em;
+    height: 2.5em;
+    color: rgb(0, 0, 0);
+}
+
+.HeadingTwo {
+    display: flex;
+    align-items: center;
+    gap: 45em;
+    margin-top: 1.3em;
+}
+
+.InputDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    gap: 1.2em;
+}
+
+#Filter {
+    border: none;
+    width: 7em;
+    height: 3em;
+    padding: 7px;
+}
+
+.SecInput {
+    display: flex;
+}
+
+.SearchIcon {
+    background-color: rgba(146, 143, 143, 0.1);
+    width: 2em;
+    height: 1.1em;
+    padding: 11.5px;
+}
+
+input {
+    width: 49em;
+    height: 2em;
+    border: none;
+    background-color: rgba(146, 143, 143, 0.1);
+    padding: 7px;
+    outline: none;
+}

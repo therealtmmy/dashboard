@@ -1,0 +1,11 @@
+.NoTeacher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 55.5em;
+    height: 15em;
+    background-color: rgba(146, 143, 143, 0.1);
+    margin-top: 2em;
+    padding-top: 10em;
+}
