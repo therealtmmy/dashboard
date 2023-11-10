@@ -2,6 +2,7 @@ import React from "react";
 import { FaRegBell, FaSearch, FaSortDown } from "react-icons/fa";
 import "./Teachers.css";
 import NoTeacher from "./NoTeacher";
+import AddTeachers from "../AddTeachers/AddTeachers";
 
 const Teachers = () => {
   return (
@@ -17,7 +18,7 @@ const Teachers = () => {
         <p>Teachers</p>
 
         <div>
-          <button>Add Teachers</button>
+          <button className="AddTeacherButton"> Add Teachers </button>
         </div>
       </div>
 
@@ -37,6 +38,7 @@ const Teachers = () => {
         </div>
       </div>
       <NoTeacher />
+      {/* <AddTeachers /> */}
     </div>
   );
 };

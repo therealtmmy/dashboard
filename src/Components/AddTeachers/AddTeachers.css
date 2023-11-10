@@ -1,0 +1,121 @@
+.AddTeachers {
+    width: 45em;
+    height: 28.5em;
+    background-color: rgb(255, 255, 255);
+    padding: 5em;
+    color: rgb(64, 62, 62);
+    margin-top: -35em;
+    margin-left: 1em;
+    /* box-shadow: 1px 1px 3px 1px rgb(0, 0, 0); */
+}
+
+.AddTeacherImage {
+    display: flex;
+    align-items: center;
+    gap: 20em;
+    width: 49em;
+}
+
+.file {
+    width: 20em;
+    border: 1px solid rgba(64, 62, 62, 0.3);
+    border-radius: 3px;
+    margin-top: 6px;
+    background: none;
+    height: 1.5em;
+    margin-bottom: 3em;
+}
+
+.fullname {
+    border: 1px solid rgba(64, 62, 62, 0.3);
+    border-radius: 3px;
+    margin-top: 6px;
+    background: none;
+    height: 1.5em;
+    margin-bottom: 3em;
+    color: rgb(64, 62, 62);
+}
+
+.Email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: rgb(64, 62, 62);
+}
+
+.email {
+    border: 1px solid rgba(64, 62, 62, 0.3);
+    border-radius: 3px;
+    margin-top: 6px;
+    background: none;
+    width: 30em;
+    height: 1.5em;
+    margin-bottom: 3em;
+    color: rgb(64, 62, 62);
+}
+
+.Class {
+    width: 10em;
+    height: 2.8em;
+    background: none;
+    border: 1px solid rgba(64, 62, 62, 0.3);
+    outline: none;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: -1em;
+}
+
+.Gender {
+    width: 10em;
+    height: 2.8em;
+    background: none;
+    border: 1px solid rgba(64, 62, 62, 0.3);
+    outline: none;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: -1em;    
+}
+
+.Subject {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+     color: rgb(64, 62, 62);
+}
+
+.SubjectDropdown {
+    width: 22em;
+    height: 2.8em;
+    background: none;
+    border: 1px solid  rgba(64, 62, 62, 0.3);
+    outline: none;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: -1em;
+}
+
+.phoneNumber {
+    border: 1px solid  rgba(64, 62, 62, 0.3);
+    border-radius: 3px;
+    margin-top: 6px;
+    background: none;
+    width: 30em;
+    height: 1.5em;
+    margin-bottom: 3em;
+     color: rgb(64, 62, 62);
+}
+
+.AddTeacherButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7em;
+    width: 9em;
+    background: #509CDB;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    height: 2.5em;
+    color: white;
+}

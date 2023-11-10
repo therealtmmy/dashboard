@@ -40,6 +40,20 @@
     margin-top: 1.3em;
 }
 
+.AddTeacherButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7em;
+    width: 9em;
+    background: #509CDB;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    height: 2.5em;
+    color: white;
+}
+
 .InputDiv {
     display: flex;
     align-items: center;
@@ -53,6 +67,7 @@
     width: 7em;
     height: 3em;
     padding: 7px;
+    outline: none;
 }
 
 .SecInput {
