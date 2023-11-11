@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { FaRegBell, FaSearch, FaSortDown } from "react-icons/fa";
 import "./Teachers.css";
 import NoTeacher from "./NoTeacher";
@@ -6,6 +7,13 @@ import AddTeachers from "../AddTeachers/AddTeachers";
 import AddedTeachers from "../AddedTeachers/AddedTeachers";
 
 const Teachers = () => {
+  const [showTeacher, setShowTeacher] = useState(false);
+
+  const addTeachers = () => {
+    setShowTeacher(!showTeacher);
+    console.log("Oluwatimilehin");
+  };
+
   return (
     <div className="Teacher">
       <div className="TeacherHeader">
@@ -19,7 +27,10 @@ const Teachers = () => {
         <p>Teachers</p>
 
         <div>
-          <button className="AddTeacherButton"> Add Teachers </button>
+          <button onClick={addTeachers} className="AddTeacherButton">
+            {" "}
+            Add Teachers{" "}
+          </button>
         </div>
       </div>
 
@@ -39,7 +50,7 @@ const Teachers = () => {
         </div>
       </div>
       <NoTeacher />
-      {/* <AddTeachers /> */}
+      {showTeacher ? <AddTeachers /> : null}
       {/* <AddedTeachers /> */}
     </div>
   );

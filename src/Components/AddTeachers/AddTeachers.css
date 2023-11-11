@@ -119,3 +119,21 @@
     height: 2.5em;
     color: white;
 }
+
+.addTeachersBtns {
+    display: flex;
+    gap: 1em;
+}
+
+.CancelTeacherButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7em;
+    width: 9em;
+    background: rgb(255, 0, 0);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    height: 2.5em;
+}
