@@ -1,0 +1,33 @@
+.InSegment {
+    display: flex;
+    gap: 10em;
+    margin-top: 2.5em;
+    margin-left: -2em;
+    background: rgb(79, 156, 219);
+    padding: 8px 8px 8px 24px;
+  color: white;
+}
+
+.avatar {
+    border-radius: 3em;
+    width: 2em;
+    height: 2em;
+    object-fit: contain;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10.6em;
+    margin-top: 2em;
+    margin-left: -1em;
+    font-size: 13px;
+    
+}
+
+.userAvi {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-right: -3em;
+}

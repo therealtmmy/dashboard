@@ -3,10 +3,12 @@ import { FaRegBell, FaSearch, FaSortDown } from "react-icons/fa";
 import "./Teachers.css";
 import NoTeacher from "./NoTeacher";
 import AddTeachers from "../AddTeachers/AddTeachers";
+import AddedTeachers from "../AddedTeachers/AddedTeachers";
 
 const Teachers = () => {
   return (
     <div className="Teacher">
+      <AddedTeachers />
       <div className="TeacherHeader">
         <div className="TeacherNotification">
           <FaRegBell className="Bell" />
@@ -29,7 +31,7 @@ const Teachers = () => {
               Filter <FaSortDown />
             </option>
             <option value="">Class</option>
-            <option value="">Gender</option>
+            <option value="">Subject</option>
           </select>
         </div>
         <div className="SecInput">

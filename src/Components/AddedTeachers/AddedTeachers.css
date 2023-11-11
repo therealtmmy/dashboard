@@ -1,0 +1,53 @@
+.AddedTeachers {
+    height: 40em;
+}
+
+.AddedTeacherHeader {
+    display: flex;
+    gap: 43em;
+}
+
+.AddedTeacherButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7em;
+    width: 9em;
+    background: #509CDB;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    height: 2.5em;
+    color: white;
+}
+
+.AddedTeachNotification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+} 
+
+.AddedButton {
+    background: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 8em;
+    height: 2.5em;
+    color: rgb(0, 0, 0);
+}
+
+.AddedButton:hover {
+    background: #509CDB;
+    color: white;
+}
+
+
+ .SearchInputDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    gap: 1.2em;
+}

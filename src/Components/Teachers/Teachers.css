@@ -33,6 +33,12 @@
     color: rgb(0, 0, 0);
 }
 
+
+.TeacherButton:hover {
+    background: #509CDB;
+    color: white;
+}
+
 .HeadingTwo {
     display: flex;
     align-items: center;
