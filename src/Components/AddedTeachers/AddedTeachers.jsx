@@ -29,6 +29,7 @@ const AddedTeachers = () => {
           <input type="text" placeholder="Search for a teacher by name" />
         </div>
       </div>
+
       <InSegment />
     </div>
   );

@@ -8,7 +8,6 @@ import AddedTeachers from "../AddedTeachers/AddedTeachers";
 const Teachers = () => {
   return (
     <div className="Teacher">
-      <AddedTeachers />
       <div className="TeacherHeader">
         <div className="TeacherNotification">
           <FaRegBell className="Bell" />
@@ -41,6 +40,7 @@ const Teachers = () => {
       </div>
       <NoTeacher />
       {/* <AddTeachers /> */}
+      {/* <AddedTeachers /> */}
     </div>
   );
 };

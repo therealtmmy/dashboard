@@ -2,6 +2,7 @@
     display: flex;
     gap: 10em;
     margin-top: 2.5em;
+    margin-bottom: 1.1em;
     margin-left: -2em;
     background: rgb(79, 156, 219);
     padding: 8px 8px 8px 24px;
@@ -18,8 +19,8 @@
 .user {
     display: flex;
     align-items: center;
-    gap: 10.6em;
-    margin-top: 2em;
+    gap: 9.8em;
+    margin-top: 1.3em;
     margin-left: -1em;
     font-size: 13px;
     

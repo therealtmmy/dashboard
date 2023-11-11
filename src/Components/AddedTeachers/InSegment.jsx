@@ -1,6 +1,58 @@
 import React from "react";
 import "../AddedTeachers/InSegment.css";
 
+const Teachers = [
+  {
+    img: "https://xsgames.co/randomusers/assets/avatars/male/62.jpg",
+    name: "Joyce Emmanuel",
+    subject: "Chemistry",
+    class: "JSS 2",
+    email: "adesolaadetutu@gmail.com",
+    gender: "Female",
+  },
+
+  {
+    img: "https://xsgames.co/randomusers/assets/avatars/male/62.jpg",
+    name: "Joyce Emmanuel",
+    subject: "Chemistry",
+    class: "JSS 2",
+    email: "adesolaadetutu@gmail.com",
+    gender: "Female",
+  },
+
+  {
+    img: "https://xsgames.co/randomusers/assets/avatars/male/62.jpg",
+    name: "Joyce Emmanuel",
+    subject: "Chemistry",
+    class: "JSS 2",
+    email: "adesolaadetutu@gmail.com",
+    gender: "Female",
+  },
+];
+
+const Teacher = ({ data }) => (
+  <div>
+    <div className="user">
+      <div className="userAvi">
+        <img className="avatar" src={data.img} alt="avatar" />
+        <p>{data.name}</p>
+      </div>
+      <div>
+        <p>{data.subject}</p>
+      </div>
+      <div>
+        <p>{data.class}</p>
+      </div>
+      <div>
+        <p>{data.email}</p>
+      </div>
+      <div>
+        <p>{data.gender}</p>
+      </div>
+    </div>
+  </div>
+);
+
 const InSegment = () => {
   return (
     <>
@@ -21,31 +73,9 @@ const InSegment = () => {
           <h5>Gender</h5>
         </div>
       </div>
-
-      <div>
-        <div className="user">
-          <div className="userAvi">
-            <img
-              className="avatar"
-              src="https://xsgames.co/randomusers/assets/avatars/male/62.jpg"
-              alt="avatar"
-            />
-            <p>Joyce Emmanuel</p>
-          </div>
-          <div>
-            <p>Chemistry</p>
-          </div>
-          <div>
-            <p>JSS 2</p>
-          </div>
-          <div>
-            <p>adetutu@gmail.com</p>
-          </div>
-          <div>
-            <p>Female</p>
-          </div>
-        </div>
-      </div>
+      {Teachers.map((data, index) => (
+        <Teacher key={index} data={data} />
+      ))}
     </>
   );
 };

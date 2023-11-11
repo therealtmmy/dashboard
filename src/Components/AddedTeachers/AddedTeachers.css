@@ -1,5 +1,7 @@
 .AddedTeachers {
     height: 40em;
+    margin-top: -37em;
+    z-index: -1;
 }
 
 .AddedTeacherHeader {
