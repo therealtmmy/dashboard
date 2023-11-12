@@ -11,7 +11,6 @@ const Teachers = () => {
 
   const addTeachers = () => {
     setShowTeacher(!showTeacher);
-    console.log("Oluwatimilehin");
   };
 
   return (
