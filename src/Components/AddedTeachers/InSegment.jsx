@@ -10,24 +10,6 @@ const Teachers = [
     email: "adesolaadetutu@gmail.com",
     gender: "Female",
   },
-
-  {
-    img: "https://xsgames.co/randomusers/assets/avatars/male/62.jpg",
-    name: "Joyce Emmanuel",
-    subject: "Chemistry",
-    class: "JSS 2",
-    email: "adesolaadetutu@gmail.com",
-    gender: "Female",
-  },
-
-  {
-    img: "https://xsgames.co/randomusers/assets/avatars/male/62.jpg",
-    name: "Joyce Emmanuel",
-    subject: "Chemistry",
-    class: "JSS 2",
-    email: "adesolaadetutu@gmail.com",
-    gender: "Female",
-  },
 ];
 
 const Teacher = ({ data }) => (

@@ -13,7 +13,7 @@ const AddedTeachers = () => {
 
         <div className="AddedTeachNotification">
           <FaRegBell className="Bell" />
-          <button className="AddedButton">Log out</button>
+          <button className="AddedBtn">Log out</button>
         </div>
       </div>
       <div className="SearchInputDiv">

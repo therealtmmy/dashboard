@@ -1,7 +1,5 @@
 .AddedTeachers {
-    height: 40em;
-    margin-top: -37em;
-    z-index: -1;
+ z-index: -1;
 }
 
 .AddedTeacherHeader {
@@ -30,7 +28,7 @@
     gap: 1em;
 } 
 
-.AddedButton {
+.AddedBtn {
     background: none;
     cursor: pointer;
     border: none;
@@ -40,7 +38,7 @@
     color: rgb(0, 0, 0);
 }
 
-.AddedButton:hover {
+.AddedBtn:hover {
     background: #509CDB;
     color: white;
 }
