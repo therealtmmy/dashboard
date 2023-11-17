@@ -2,26 +2,46 @@ import React from "react";
 import { useState } from "react";
 import { FaPlusCircle, FaRegTimesCircle } from "react-icons/fa";
 import "./AddTeachers.css";
+import AddedTeachers from "../AddedTeachers/AddedTeachers";
 
-const AddTeachers = ({ addTeachers }) => {
-  const [teachers, setTeachers] = useState([
-    {
-      img: "https://xsgames.co/randomusers/assets/avatars/male/62.jpg",
-      name: "Joyce Emmanuel",
-      subject: "Chemistry",
-      class: "JSS 2",
-      email: "adesolaadetutu@gmail.com",
-      gender: "Female",
-    },
-  ]);
-  const [showAddedTeacher, setShowAddedTeacher] = useState(false);
+const AddTeachers = ({ showHide }) => {
+  const [teachers, setTeachers] = useState({
+    img: "",
+    name: "",
+    subject: "",
+    class: "",
+    email: "",
+    phoneNumber: "",
+    gender: "",
+  });
+
+  const [contact, setContact] = useState([]);
+  const [showTeacher, setShowTeacher] = useState(false);
+  const [cancel, setCancel] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setTeachers((prevTeachers) => ({ ...prevTeachers, img: teachers.img }));
-    console.log(teachers);
-    setShowAddedTeacher(!showAddedTeacher);
-    return addTeachers;
+    if (teachers.name === "" && teachers.email === "") {
+      alert("Input fields cannot be empty");
+      return;
+    }
+    const id = Math.floor(Math.random() * 10000) + 1;
+    const newContacts = { id, ...teachers };
+    setContact([...contact, newContacts]);
+    setTeachers({
+      img: "",
+      name: "",
+      subject: "",
+      phoneNumber: "",
+      class: "",
+      email: "",
+      gender: "",
+    });
+    if (showTeacher) {
+      setShowTeacher(showTeacher);
+    } else setShowTeacher(!showTeacher);
+    document.getElementsByClassName("AddTeachers")[0].style.display = "none";
+    document.getElementsByClassName("Close")[0].style.display = "none";
   };
 
   return (
@@ -100,7 +120,14 @@ const AddTeachers = ({ addTeachers }) => {
             <div className="Subject">
               <div>
                 <p style={{ fontSize: "14px" }}>Phone number</p>
-                <input className="phoneNumber" type="text" />
+                <input
+                  className="phoneNumber"
+                  type="text"
+                  value={teachers.phoneNumber}
+                  onChange={(e) =>
+                    setTeachers({ ...teachers, phoneNumber: e.target.value })
+                  }
+                />
               </div>
 
               <select
@@ -132,13 +159,19 @@ const AddTeachers = ({ addTeachers }) => {
               Add Teacher
             </button>
 
-            <button onClick={addTeachers} className="CancelTeacherButton">
+            <button onClick={showHide} className="CancelTeacherButton">
               <FaRegTimesCircle />
               Cancel
             </button>
           </div>
         </form>
       </div>
+
+      {showTeacher ? (
+        <div className="addedTeachers">
+          {<AddedTeachers contact={contact} />}
+        </div>
+      ) : null}
     </>
   );
 };

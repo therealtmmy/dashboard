@@ -1,0 +1,8 @@
+.Set {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 7%;
+    left: 30%;
+   
+}

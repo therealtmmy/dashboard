@@ -96,13 +96,3 @@ input {
     outline: none;
 }
 
-.addedTeachers {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: absolute;
-    top: 8%;
-    left: 27%;
-    z-index: -1;
-}

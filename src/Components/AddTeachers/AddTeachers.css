@@ -138,3 +138,12 @@
     height: 2.5em;
 }
 
+.addedTeachers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 3em;
+    z-index: 1;
+}

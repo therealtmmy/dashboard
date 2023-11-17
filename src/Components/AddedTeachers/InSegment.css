@@ -1,12 +1,39 @@
+table {
+    text-align: start;
+    table-layout: fixed;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+
+  th:nth-child(2),
+  td:nth-child(2) {
+    width: 20%;
+  }
+
+  th:nth-child(3),
+  td:nth-child(3) {
+    width: 10%;
+  }
+  
+  th:nth-child(5),
+  td:nth-child(5) {
+    width: 10%;
+  }
+  
+
 .InSegment {
-    display: flex;
-    gap: 10em;
     margin-top: 2.5em;
-    margin-bottom: 1.1em;
+    margin-bottom: 1em;
     margin-left: -2em;
     background: rgb(79, 156, 219);
-    padding: 8px 8px 8px 24px;
+    padding-left: 20px;
   color: white;
+width: 100%;
 }
 
 .avatar {
@@ -17,13 +44,15 @@
 }
 
 .user {
-    display: flex;
-    align-items: center;
-    gap: 9.8em;
-    margin-top: 1.3em;
-    margin-left: -1em;
+    margin-left: -2.5em;
     font-size: 13px;
-    
+    width: 100%;
+    padding-left: 20px;
+}
+
+.user:hover {
+    color: white;
+     background: rgb(79, 156, 219);
 }
 
 .userAvi {

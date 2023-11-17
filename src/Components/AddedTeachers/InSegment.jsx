@@ -1,61 +1,39 @@
 import React from "react";
 import "../AddedTeachers/InSegment.css";
 
-const Teachers = [
-  {
-    img: "https://xsgames.co/randomusers/assets/avatars/male/62.jpg",
-    name: "Joyce Emmanuel",
-    subject: "Chemistry",
-    class: "JSS 2",
-    email: "adesolaadetutu@gmail.com",
-    gender: "Female",
-  },
-];
-
 const Teacher = ({ data }) => (
   <div>
-    <div className="user">
-      <div className="userAvi">
-        <img className="avatar" src={data.img} alt="avatar" />
-        <p>{data.name}</p>
-      </div>
-      <div>
-        <p>{data.subject}</p>
-      </div>
-      <div>
-        <p>{data.class}</p>
-      </div>
-      <div>
-        <p>{data.email}</p>
-      </div>
-      <div>
-        <p>{data.gender}</p>
-      </div>
-    </div>
+    <table className="user">
+      <tr>
+        <td>
+          {" "}
+          <div className="userAvi">
+            <img className="avatar" src={data.img} alt="avatar" />
+            <p>{data.name}</p>
+          </div>
+        </td>
+        <td>{data.subject}</td>
+        <td>{data.class}</td>
+        <td>{data.email}</td>
+        <td>{data.gender}</td>
+      </tr>
+    </table>
   </div>
 );
 
-const InSegment = () => {
+const InSegment = ({ contact }) => {
   return (
     <>
-      <div className="InSegment">
-        <div>
-          <h5>Name</h5>
-        </div>
-        <div>
-          <h5>Subject</h5>
-        </div>
-        <div>
-          <h5>Class</h5>
-        </div>
-        <div>
-          <h5>Email address</h5>
-        </div>
-        <div>
-          <h5>Gender</h5>
-        </div>
-      </div>
-      {Teachers.map((data, index) => (
+      <table className="InSegment">
+        <tr>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Class</th>
+          <th>Email address</th>
+          <th>Gender</th>
+        </tr>
+      </table>
+      {contact.map((data, index) => (
         <Teacher key={index} data={data} />
       ))}
     </>

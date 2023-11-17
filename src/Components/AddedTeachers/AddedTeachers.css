@@ -1,5 +1,7 @@
 .AddedTeachers {
- z-index: -1;
+ z-index: 1;
+ height: 50em;
+
 }
 
 .AddedTeacherHeader {
@@ -50,4 +52,9 @@
     justify-content: center;
     margin-top: 2em;
     gap: 1.2em;
+}
+
+.InAddition {
+    position: absolute;
+    top: 70%;
 }
