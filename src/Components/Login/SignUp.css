@@ -1,0 +1,90 @@
+.signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  margin-top: 10.5em;
+  margin-bottom: 4em;
+    gap: 6em;
+   
+}
+
+.empty {
+    color: rgb(255, 0, 0);
+    font-size: 12px;
+  
+    font-weight: 600;
+    margin-top: 14px;
+    margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.created{
+    font-size: 12px;
+  
+    font-weight: 600;
+    margin-top: 14px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: rgb(0, 218, 0)
+  
+}
+
+
+
+.NameDiv {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(210, 204, 204);
+    padding:6px;
+    width: 19em;
+    background: white;
+    margin-top: 10px;
+}
+
+.IconDiv {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(210, 204, 204);
+    padding:6px;
+    width: 19em;
+    margin-top: 15px;
+    background: white;
+}
+
+
+.passwordError {
+    font-size: 12px;
+    margin-top: 3px;
+color: red
+}
+
+.passwordErrorOne {
+    font-size: 12px;
+    margin-top: 3px;
+    margin-bottom:-3px;
+color: red
+}
+
+.password {
+    font-size: 12px;
+    margin-top: 3px;
+color: rgb(134, 132, 132)
+}
+
+.SignUpBtn {
+    background-color: rgb(3, 3, 62);
+    border: none;
+    width: 24em;
+    color: white;
+    margin-top: 10px;
+    height: 2.7em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-top: 25px;
+    outline: none;
+}

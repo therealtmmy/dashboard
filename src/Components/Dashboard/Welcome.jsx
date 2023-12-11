@@ -31,11 +31,12 @@ const Admin = ({ value }) => (
   </div>
 );
 
-const Welcome = () => {
+const Welcome = ({ user }) => {
+  console.log(user);
   return (
     <div className="Welcome">
       <h1>Welcome to your dashboard, Udemy School</h1>
-      <h3 className="mail">Uyo/school/@teachable.com</h3>
+      <h3 className="mail">{user?.email}</h3>
       {data.map((value, index) => (
         <Admin key={index} value={value} />
       ))}

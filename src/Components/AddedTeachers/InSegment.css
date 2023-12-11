@@ -1,6 +1,7 @@
 table {
     text-align: start;
     table-layout: fixed;
+    color: black;
   }
 
   th, td {

@@ -1,9 +1,10 @@
 import React from "react";
 import { FaRegBell } from "react-icons/fa";
 import "./Dashboard.css";
+import { Link } from "react-router-dom";
 import Welcome from "./Welcome";
 
-const Dashboard = () => {
+const Dashboard = ({ user }) => {
   return (
     <div className="Dashboard">
       {/* HEADER SESSION */}
@@ -18,10 +19,12 @@ const Dashboard = () => {
 
         <div className="Notification">
           <FaRegBell className="Bell" />
-          <button>Log out</button>
+          <Link to="/" id="btn">
+            Log out
+          </Link>
         </div>
       </div>
-      <Welcome />
+      <Welcome user={user} />
     </div>
   );
 };

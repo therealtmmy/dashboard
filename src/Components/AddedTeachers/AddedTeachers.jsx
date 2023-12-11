@@ -30,7 +30,7 @@ const AddedTeachers = ({ contact }) => {
             <button className="AddedBtn">Log out</button>
           </div>
         </div>
-        <div className="SearchInputDiv">
+        {/* <div className="SearchInputDiv">
           <div>
             <select name="" id="Filter">
               <option value="">Filter</option>
@@ -42,7 +42,7 @@ const AddedTeachers = ({ contact }) => {
             <FaSearch className="SearchIcon" />
             <input type="text" placeholder="Search for a teacher by name" />
           </div>
-        </div>
+        </div> */}
 
         <InSegment contact={contact} />
         {/* <div className="InAddition">{showInput ? <AddTeachers /> : null}</div> */}

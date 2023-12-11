@@ -6,6 +6,7 @@
     color: rgb(64, 62, 62);
     margin-top: -35em;
     margin-left: 1em;
+    font-family: 'Kumbh Sans', sans-serif;
     /* box-shadow: 1px 1px 3px 1px rgb(0, 0, 0); */
 }
 
@@ -21,8 +22,11 @@
     border: 1px solid rgba(64, 62, 62, 0.3);
     border-radius: 3px;
     margin-top: 6px;
+    
     background: none;
     height: 1.5em;
+    padding: 8px;
+    margin-left: -3px;
     margin-bottom: 3em;
 }
 
@@ -33,6 +37,8 @@
     background: none;
     height: 1.5em;
     margin-bottom: 3em;
+    padding: 8px;
+    margin-left: -3px;
     color: rgb(64, 62, 62);
 }
 
@@ -45,6 +51,8 @@
 }
 
 .email {
+    padding: 8px;
+    margin-left: -3px;
     border: 1px solid rgba(64, 62, 62, 0.3);
     border-radius: 3px;
     margin-top: 6px;
@@ -56,23 +64,27 @@
 }
 
 .Class {
+    padding: 8px;
+    margin-left: -3px;
     width: 10em;
     height: 2.8em;
     background: none;
     border: 1px solid rgba(64, 62, 62, 0.3);
     outline: none;
-    padding: 10px;
+  
     border-radius: 3px;
     margin-top: -1em;
 }
 
 .Gender {
+    padding: 8px;
+    margin-left: -3px;
     width: 10em;
     height: 2.8em;
     background: none;
     border: 1px solid rgba(64, 62, 62, 0.3);
     outline: none;
-    padding: 10px;
+  
     border-radius: 3px;
     margin-top: -1em;    
 }
@@ -85,17 +97,20 @@
 }
 
 .SubjectDropdown {
+    padding: 8px;
+    margin-left: -3px;
     width: 22em;
     height: 2.8em;
     background: none;
     border: 1px solid  rgba(64, 62, 62, 0.3);
     outline: none;
-    padding: 10px;
     border-radius: 3px;
     margin-top: -1em;
 }
 
 .phoneNumber {
+    padding: 8px;
+    margin-left: -3px;
     border: 1px solid  rgba(64, 62, 62, 0.3);
     border-radius: 3px;
     margin-top: 6px;
@@ -136,6 +151,7 @@
     border: none;
     border-radius: 5px;
     height: 2.5em;
+    color: white
 }
 
 .addedTeachers {

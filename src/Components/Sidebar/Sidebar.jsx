@@ -9,7 +9,7 @@ import {
   FaChartBar,
   FaExternalLinkAlt,
 } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 const Sidebar = () => {
   const iconData = [
@@ -86,6 +86,7 @@ const Sidebar = () => {
               <h5>NEW</h5>
             </span>
           </NavLink>
+          <Outlet />
         </div>
       </div>
     </div>

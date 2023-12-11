@@ -1,7 +1,8 @@
+
 .AddedTeachers {
  z-index: 1;
  height: 50em;
-
+margin-left: 2em;
 }
 
 .AddedTeacherHeader {
@@ -21,6 +22,7 @@
     border-radius: 5px;
     height: 2.5em;
     color: white;
+    margin-left: -2em;
 }
 
 .AddedTeachNotification {
@@ -52,6 +54,7 @@
     justify-content: center;
     margin-top: 2em;
     gap: 1.2em;
+    
 }
 
 .InAddition {

@@ -1,10 +1,11 @@
 .Welcome {
     margin-top: 5em;
     color: rgb(47, 46, 45);
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 .mail {
-    margin-left: 4em;
+    margin-left: 1em;
     margin-top: 1em;
     margin-bottom: 3em;
 

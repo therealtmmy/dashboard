@@ -48,6 +48,7 @@ const Teachers = () => {
             <div className="SecInput">
               <FaSearch className="SearchIcon" />
               <input
+                id="teacherInput"
                 type="text"
                 placeholder="Search for a teacher by name"
                 value={search}
