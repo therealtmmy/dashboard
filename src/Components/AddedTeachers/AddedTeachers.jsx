@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { FaRegBell, FaSearch } from "react-icons/fa";
+import { FaRegBell, FaGithub } from "react-icons/fa";
 import "./AddedTeachers.css";
 import InSegment from "./InSegment";
 // import AddTeachers from "../AddTeachers/AddTeachers";
@@ -27,7 +27,14 @@ const AddedTeachers = ({ contact }) => {
 
           <div className="AddedTeachNotification">
             <FaRegBell className="Bell" />
-            <button className="AddedBtn">Log out</button>
+            <a
+              className="github"
+              href="https://github.com/therealtmmy/"
+              target="blank"
+            >
+              {" "}
+              <FaGithub />
+            </a>
           </div>
         </div>
         {/* <div className="SearchInputDiv">

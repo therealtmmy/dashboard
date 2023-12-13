@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { FaRegBell, FaSearch, FaSortDown } from "react-icons/fa";
+import { FaGithub, FaRegBell, FaSearch, FaSortDown } from "react-icons/fa";
 import "./Teachers.css";
 import NoTeacher from "./NoTeacher";
 import AddTeachers from "../AddTeachers/AddTeachers";
@@ -20,7 +20,14 @@ const Teachers = () => {
           <div className="TeacherHeader">
             <div className="TeacherNotification">
               <FaRegBell className="Bell" />
-              <button className="TeacherButton">Log out</button>
+              <a
+                className="github"
+                href="https://github.com/therealtmmy/"
+                target="blank"
+              >
+                {" "}
+                <FaGithub />
+              </a>
             </div>
           </div>
 
