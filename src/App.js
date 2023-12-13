@@ -17,6 +17,7 @@ import ProtectedRoute from "./ProtectedRoute.jsx";
 
 function App() {
   const [user, setUser] = useState(null);
+  const [userName, setUserName] = useState(null);
 
   return (
     <BrowserRouter>
@@ -25,7 +26,7 @@ function App() {
         <Route path="/" element={<Link />}>
           <Route index element={<Hero />} />
           <Route path="hero" element={<Hero setUser={setUser}></Hero>} />
-          <Route path="signup" element={<SignUp />} />
+          <Route path="signup" element={<SignUp setUserName={setUserName} />} />
         </Route>
 
         {/* Dashboard Route */}
@@ -34,7 +35,7 @@ function App() {
             index
             element={
               <ProtectedRoute user={user}>
-                <Dashboard user={user} />
+                <Dashboard user={user} userName={userName} />
               </ProtectedRoute>
             }
           />
@@ -42,7 +43,7 @@ function App() {
             path="dashboard"
             element={
               <ProtectedRoute user={user}>
-                <Dashboard user={user} />
+                <Dashboard user={user} userName={userName} />
               </ProtectedRoute>
             }
           />
@@ -50,7 +51,7 @@ function App() {
             path="teachers"
             element={
               <ProtectedRoute user={user}>
-                <Teachers user={user} />
+                <Teachers />
               </ProtectedRoute>
             }
           />
@@ -58,7 +59,7 @@ function App() {
             path="students"
             element={
               <ProtectedRoute user={user}>
-                <Students user={user} />
+                <Students />
               </ProtectedRoute>
             }
           />
@@ -66,7 +67,7 @@ function App() {
             path="billing"
             element={
               <ProtectedRoute user={user}>
-                <Billing user={user} />
+                <Billing />
               </ProtectedRoute>
             }
           />
@@ -74,7 +75,7 @@ function App() {
             path="settings"
             element={
               <ProtectedRoute user={user}>
-                <Set user={user} />
+                <Set />
               </ProtectedRoute>
             }
           />
@@ -82,7 +83,7 @@ function App() {
             path="exams"
             element={
               <ProtectedRoute user={user}>
-                <Exams user={user} />
+                <Exams />
               </ProtectedRoute>
             }
           />

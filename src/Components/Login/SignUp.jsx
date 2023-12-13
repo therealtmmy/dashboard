@@ -14,7 +14,7 @@ import { faLock, faCircleExclamation } from "@fortawesome/free-solid-svg-icons";
 import "../Login/SignUp.css";
 import { auth } from "../../firebase";
 
-const SignUp = () => {
+const SignUp = ({ setUserName }) => {
   const [signup, setSignup] = useState({
     firstName: "",
     surname: "",
@@ -32,10 +32,12 @@ const SignUp = () => {
   const [existing, setExisting] = useState(false);
   const [weakPassword, setWeakPassword] = useState(false);
   const [missingPassword, setMissingPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const submit = () => {
     // Display Error
     if (signup.firstName || signup.password === "") {
+      setLoading(false);
       setEmpty(true);
     }
 
@@ -65,20 +67,24 @@ const SignUp = () => {
       signup.confirmPassword
     )
       .then((userCredential) => {
-        setHide(false);
-        setWeakPassword(false);
-        setMissingPassword(false);
-        setCreated(true);
-        setExisting(false);
-        setSignup({
-          firstName: "",
-          surname: "",
-          email: "",
-          password: "",
-          confirmPassword: "",
-        });
+        if (userCredential) {
+          setLoading(true);
+          setHide(false);
+          setWeakPassword(false);
+          setMissingPassword(false);
+          setLoading(false);
+          setCreated(true);
+          setExisting(false);
+          setSignup({
+            firstName: "",
+            surname: "",
+            email: "",
+            password: "",
+            confirmPassword: "",
+          });
+        }
 
-        console.log(userCredential);
+        setUserName({ firstName: signup.firstName });
       })
       .catch((error) => {
         if (error.code === "auth/email-already-in-use") {
@@ -251,6 +257,14 @@ const SignUp = () => {
           alt="A Boy studying with his book"
         />
       </div>
+
+      {/* Spinner */}
+
+      {loading && (
+        <div className="spinner-overlay">
+          <div className="spinner" />
+        </div>
+      )}
     </div>
   );
 };

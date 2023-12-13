@@ -1,10 +1,15 @@
 import React from "react";
 import { FaRegBell } from "react-icons/fa";
 import "./Dashboard.css";
-import { Link } from "react-router-dom";
 import Welcome from "./Welcome";
+import { useNavigate } from "react-router-dom";
 
-const Dashboard = ({ user }) => {
+const Dashboard = ({ user, userName }) => {
+  const navigate = useNavigate();
+  const LogOut = () => {
+    navigate("/Hero");
+  };
+
   return (
     <div className="Dashboard">
       {/* HEADER SESSION */}
@@ -19,12 +24,12 @@ const Dashboard = ({ user }) => {
 
         <div className="Notification">
           <FaRegBell className="Bell" />
-          <Link to="/" id="btn">
+          <button onClick={LogOut} id="btn">
             Log out
-          </Link>
+          </button>
         </div>
       </div>
-      <Welcome user={user} />
+      <Welcome user={user} userName={userName} />
     </div>
   );
 };

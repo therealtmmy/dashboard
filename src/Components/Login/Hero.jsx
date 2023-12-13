@@ -23,6 +23,7 @@ const Hero = ({ setUser }) => {
   const [unveil, setUnveil] = useState(false);
   const [invalidPassword, setInvalidPassword] = useState(false);
   const [successfulPassword, setSuccessfulPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const showPasscode = () => {
     setUnveil(!unveil);
@@ -35,36 +36,45 @@ const Hero = ({ setUser }) => {
     if (emailPassword.email || emailPassword.password === "") {
       setShowEmail(true);
       setShowPassword(true);
+      setLoading(false);
     } else {
       setShowEmail(false);
       setShowPassword(false);
+      setLoading(true);
     }
 
     // Firebase Authentication
-
+    setLoading(true);
     signInWithEmailAndPassword(
       auth,
       emailPassword.email,
       emailPassword.password
     )
       .then((userCredential) => {
+        setLoading(true);
         if (userCredential) {
           setSuccessfulPassword(true);
           setInvalidPassword(false);
+          setLoading(true);
           setEmailPassword("");
         }
-        console.log({ email: emailPassword.email });
+
         setUser({ email: emailPassword.email });
+
         navigate("/dashboard");
       })
       .catch((error) => {
         // Display Error
+        setLoading(false);
         console.log(error);
         if (emailPassword.password === "") {
           return;
         }
         setInvalidPassword(true);
         setSuccessfulPassword(false);
+      })
+      .finally(() => {
+        setLoading(false); // Set loading to false regardless of success or failure
       });
   };
 
@@ -162,6 +172,11 @@ const Hero = ({ setUser }) => {
           alt="A boy studying"
         />
       </div>
+      {loading ? (
+        <div className="spinner-overlay">
+          <div className="spinner" />
+        </div>
+      ) : null}
     </div>
   );
 };
