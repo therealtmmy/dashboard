@@ -43,6 +43,7 @@ const SignUp = ({ setUserName }) => {
 
     if (signup.firstName || signup.password !== "") {
       setEmpty(false);
+      setLoading(true);
     }
 
     if (signup.password !== signup.confirmPassword) {
@@ -59,7 +60,7 @@ const SignUp = ({ setUserName }) => {
     }
 
     // Firebase Authentication
-
+    setLoading(true);
     createUserWithEmailAndPassword(
       auth,
       signup.email,
@@ -107,6 +108,9 @@ const SignUp = ({ setUserName }) => {
           setExisting(false);
         }
         console.log(error);
+      })
+      .finally(() => {
+        setLoading(false); // Set loading to false regardless of success or failure
       });
   };
 
@@ -260,11 +264,19 @@ const SignUp = ({ setUserName }) => {
 
       {/* Spinner */}
 
-      {loading && (
-        <div className="spinner-overlay">
-          <div className="spinner" />
-        </div>
-      )}
+      {loading ? (
+        <>
+          <div className="text-spinner-overlay">
+            {" "}
+            <img
+              className="logo"
+              src="https://i.pinimg.com/originals/f9/6a/26/f96a261e5a60d7d66b36e2850e3eb19b.png"
+              alt="logo"
+            />
+            <span style={{ marginLeft: "-40px" }}>Udemy Accelerate</span>
+          </div>
+        </>
+      ) : null}
     </div>
   );
 };

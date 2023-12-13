@@ -173,9 +173,17 @@ const Hero = ({ setUser }) => {
         />
       </div>
       {loading ? (
-        <div className="spinner-overlay">
-          <div className="spinner" />
-        </div>
+        <>
+          <div className="text-spinner-overlay">
+            {" "}
+            <img
+              className="logo"
+              src="https://i.pinimg.com/originals/f9/6a/26/f96a261e5a60d7d66b36e2850e3eb19b.png"
+              alt="logo"
+            />
+            <span style={{ marginLeft: "-40px" }}>Udemy Accelerate</span>
+          </div>
+        </>
       ) : null}
     </div>
   );
