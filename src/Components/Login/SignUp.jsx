@@ -47,6 +47,7 @@ const SignUp = ({ setUserName }) => {
     }
 
     if (signup.password !== signup.confirmPassword) {
+      setLoading(false);
       setHide(false);
       setWeakPassword(false);
       setPasswordErrorOne(true);
@@ -54,6 +55,7 @@ const SignUp = ({ setUserName }) => {
       setMissingPassword(false);
       return;
     } else {
+      setLoading(true);
       setHide(true);
       setPasswordError(false);
       setPasswordErrorOne(false);
