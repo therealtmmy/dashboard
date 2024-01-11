@@ -1,8 +1,7 @@
 
 .AddedTeachers {
-
- height: 50em;
- margin-top: 1.5em;
+height: 50em;
+margin-top: 1.5em;
 margin-left: 2em;
 margin-right: 2em;
 }
@@ -12,7 +11,7 @@ margin-right: 2em;
     gap: 43em;
 }
 
-.AddedTeacherButton {
+/* .AddedTeacherButton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +24,7 @@ margin-right: 2em;
     height: 2.5em;
     color: white;
     margin-left: -2em;
-}
+} */
 
 .AddedTeachNotification {
     display: flex;

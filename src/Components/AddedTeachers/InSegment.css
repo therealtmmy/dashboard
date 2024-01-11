@@ -28,6 +28,7 @@ table {
   
 
 .InSegment {
+  z-index: -1;
     margin-top: 2.5em;
     margin-bottom: 1em;
     margin-left: -2em;
