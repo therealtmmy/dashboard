@@ -14,12 +14,16 @@ const AddedTeachers = ({ contact }) => {
   //   setShowInput(!showInput);
   // };
 
+  const click = () => {
+    alert("In Progress");
+  };
+
   return (
     <>
       <div className="AddedTeachers">
-        <div className="AddedTeacherHeader">
+        {/* <div className="AddedTeacherHeader">
           <div>
-            <button onClick="" className="AddedTeacherButton">
+            <button onClick={click} className="AddedTeacherButton">
               {" "}
               Add Teachers{" "}
             </button>
@@ -36,7 +40,7 @@ const AddedTeachers = ({ contact }) => {
               <FaGithub />
             </a>
           </div>
-        </div>
+        </div> */}
         {/* <div className="SearchInputDiv">
           <div>
             <select name="" id="Filter">

@@ -16,32 +16,32 @@ const Teachers = () => {
   return (
     <>
       <div className="Teacher">
+        <div className="TeacherHeader">
+          <div className="TeacherNotification">
+            <FaRegBell className="Bell" />
+            <a
+              className="github"
+              href="https://github.com/therealtmmy/"
+              target="blank"
+            >
+              {" "}
+              <FaGithub />
+            </a>
+          </div>
+        </div>
+
+        <div className="HeadingTwo">
+          <p style={{ color: "black" }}>Teachers</p>
+
+          <div>
+            <button onClick={showHide} className="AddTeacherButton">
+              {" "}
+              Add Teachers{" "}
+            </button>
+          </div>
+        </div>
+
         <div className="Close">
-          <div className="TeacherHeader">
-            <div className="TeacherNotification">
-              <FaRegBell className="Bell" />
-              <a
-                className="github"
-                href="https://github.com/therealtmmy/"
-                target="blank"
-              >
-                {" "}
-                <FaGithub />
-              </a>
-            </div>
-          </div>
-
-          <div className="HeadingTwo">
-            <p>Teachers</p>
-
-            <div>
-              <button onClick={showHide} className="AddTeacherButton">
-                {" "}
-                Add Teachers{" "}
-              </button>
-            </div>
-          </div>
-
           <div className="InputDiv">
             <div>
               <select name="" id="Filter">
